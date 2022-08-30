@@ -1,3 +1,4 @@
+/* Configurações gerais */
 * {
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -5,21 +6,23 @@
   box-sizing: border-box;
   color: #333;
 }
-
+/* Tamanho do documento e do body */
 html,
 body {
   height: auto;
   min-height: 100vh;
 }
 
+/* Criando o background com um gradiente */
 html {
   background: linear-gradient(180deg, rgba(234, 2, 255, 1) 0%, #0097ff 100%);
 }
 
+/* Removendo borda que aparece ao clicar dentro do input */
 input:focus {
   outline: none;
 }
-
+/* Main container */
 #register-container {
   max-width: 900px;
   min-height: 80vh;
@@ -32,13 +35,14 @@ input:focus {
 #register-banner {
   background: url("../img/bg-form.jpg");
   background-size: cover;
-  background-position: center;
+  background-position:center;
   width: 50%;
 }
 
+/* Camada de cor transparente */
 #banner-layer {
-  background-color: rgba(25, 11, 122, 0.7);
-  height: 100%;
+  background-color: rgba(26, 11, 122, 0.7); /* 0.7 é a transparência */
+  height: 100%; /* 100% do container #register-banner */
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -48,11 +52,13 @@ input:focus {
   font-size: 4rem;
   margin-bottom: 1.5rem;
   color: #fff;
+  /* 'Seja' e 'Bem-vindo' são separadas */
   word-spacing: 50rem;
 }
 
 #register-form {
   background-color: #FDFDFD;
+  /* Espaçamento entre os elementos inseridos dentro dele */
   padding: 2rem;
   width: 50%;
   display: flex;
@@ -60,6 +66,7 @@ input:focus {
 }
 
 #register-form h2 {
+  /* Alinhamento horizontal */
   text-align: center;
   margin-bottom: 1rem;
   font-size: 2.2rem;
@@ -72,12 +79,15 @@ input:focus {
   font-size: 0.8rem
 }
 
+/* Caixas de input */
 .form-control {
+  /* Espaçamento padrão para todos os inputs */
   margin-bottom: 1rem;
   display:flex;
   flex-direction: column;
 }
 
+/* Estilização do nome das caixinhas de input*/
 .form-control label {
   font-weight: bold;
   margin-bottom: .6rem;
@@ -89,6 +99,7 @@ input:focus {
   padding: .6rem 0;
 }
 
+/* Texto para gerar senha*/
 #generate-password {
   font-weight: bold;
   cursor: pointer;
@@ -108,6 +119,7 @@ input:focus {
   color: #333;
   text-align: center;
   margin-bottom: 1rem;
+  /* Elemento oculto */
   display: none;
 }
 
@@ -116,6 +128,7 @@ input:focus {
   margin-bottom: 0.5rem;
 }
 
+/* Especificação do botão 'Registrar' */
 #register-form input[type="submit"] {
   background-color: #81d340;
   color: #fff;

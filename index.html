@@ -18,15 +18,19 @@
     <script src="/Mini projetos/Gerador de senhas/js/script.js" defer></script>
   </head>
   <body>
+    <!-- Main Container -->
     <div id="register-container">
+      <!-- Imagem e texto -->
       <div id="register-banner">
         <div id="banner-layer">
           <h1>Seja bem-vindo</h1>
         </div>
       </div>
+      <!-- Layout dos campos do forms da página -->
       <div id="register-form">
         <h2>Crie sua conta!</h2>
         <p>Registre-se para utilizar todas as funcionalidades</p>
+        <!-- Name input -->
         <div class="form-control">
           <label for="name">Nome</label>
           <input
@@ -36,6 +40,7 @@
             placeholder="Digite seu nome"
           />
         </div>
+        <!-- Email input -->
         <div class="form-control">
           <label for="email">E-mail</label>
           <input
@@ -46,6 +51,7 @@
             placeholder="Digite seu e-mail"
           />
         </div>
+        <!-- Senha input -->
         <div class="form-control">
             <label for="password">Senha</label>
           <input
@@ -56,14 +62,17 @@
             placeholder="Digite sua senha"
           />
         </div>
+        <!-- mensagem para gerar senha -->
           <p>
             Quer ajuda para criar uma senha segura?
             <span id="generate-password"> Clique aqui </span>
           </p>
+          <!-- Box que mostra a senha -->
           <div id="generated-password">
             <p>Aqui está a sua senha</p>
             <h4></h4>
           </div>
+          <!-- Confirm password Input -->
         <div class="form-control">
             <label for="confirmpassword">Confirmação de senha</label>
           <input
@@ -74,7 +83,6 @@
           />
         </div>
         <input type="submit" value="cadastrar">
-        </div>
       </div>
     </div>
   </body>
